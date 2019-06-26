@@ -22,17 +22,8 @@ a {
 		color: $heading-color;
 		text-decoration: none;
 	}
-	&:focus {
-		color: $heading-color;
-		text-decoration: none;
-	}
-	&:visited {
-		color: $text-color;
-		text-decoration: none;
-	}
 }
 .techademy {
-	margin: 0 auto;
 	background-image: url('../img/techademy-logo.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -40,8 +31,9 @@ a {
 	display: inline-block;
 	font-size: 1px;
 	color: transparent;
-	width: 140px;
-	height: 70px;
+	width: 150px;
+	height: 36px;
+	min-width: 150px;
 }
 .container-fluid {
 	padding: 0;

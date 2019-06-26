@@ -23,12 +23,17 @@ $footer-bar-color: #282F3D;
 	}
 }
 @mixin for-tab-mini {
-	@media screen and (min-device-width: 768px) {
+	@media screen and (min-device-width: 769px) {
 		@content;
 	}
 }
 @mixin for-tab {
 	@media screen and (min-device-width: 992px) {
+		@content;
+	}
+}
+@mixin for-monitor {
+	@media screen and (min-device-width: 1024px) {
 		@content;
 	}
 }

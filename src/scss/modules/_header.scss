@@ -1,5 +1,12 @@
 @import "applicationDefault";
 header {
+	background-color: $footer-bar-color;
+	.techademy {
+		margin: 18px auto;
+		@include for-monitor {
+			margin: 18px 10px;
+		}
+	}
 	.container-fluid {
 		display: flex;
 		flex-direction: row;
@@ -9,10 +16,13 @@ header {
 		color: $heading-color;
 		font-size: 1.8em;
 		padding: 5px;
+		@include for-monitor {
+			display: none;
+		}
 	}
 	.navbar-toggler {
 		padding: 5px;
-		top: 10px;
+		top: 14px;
 		left: 5px;
 	}
 	.search-toggler, .search-btn {
@@ -23,24 +33,70 @@ header {
 	}
 	.search-toggler {
 		right: 5px;
-		top: 6px;
+		top: 11px;
 	}
 	.search-form {
 		position: absolute;
 		width: 100%;
-		top: -60px;
+		top: -70px;
 		left: 0;
 		z-index: 1;
+		@include for-monitor {
+			position: relative;
+			top: 0;
+			z-index: 0;
+			margin: 12px 0 0 10px;
+			width: 70%;
+		}
+		@include for-desktop {
+			width: 100%;
+		}
 		input {
 			width: 100%;
-			padding: 15px 40px 15px 15px;
+			padding: 21px 40px 21px 15px;
 			color: $body-color;
+			@include for-monitor {
+				padding: 9px 30px 9px 10px;
+				color: $text-color;
+				background-color: transparent;
+				border: 1px solid $border-color;
+				border-radius: 25px;
+			}
 		}
 		.search-btn {
 			z-index: 2;
 			color: $body-color;
-			top: 10px;
-			right: 4px;
+			top: 15px;
+			right: 3px;
+			@include for-monitor {
+				right: 9px;
+				top: 3px;
+				color: $text-color;
+			}
+		}
+		.auto-suggest {
+			position: absolute;
+			width: 100%;
+			background-color: $heading-color;
+			ul {
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				border: 1px solid $border2-color;
+				li {
+					border-bottom: 1px solid $border2-color;
+					a {
+						padding: 8px;
+						display: block;
+						color: $body-color;
+					}
+					&::last-child {
+						border-bottom: 0;
+					}
+				}
+			}
 		}
 	}
 	.navbar-collapse {
@@ -49,16 +105,56 @@ header {
 		width: 100%;
 		height: 100%;
 		left: -101%;
+		.navbar-nav {
+			margin-top: 60px;
+		}
 		@include for-tab-mini {
 			width: 320px;
 			border-right: 1px solid $border2-color;
 		}
-		.navbar-nav {
-			margin-top: 60px;
+		@include for-monitor {
+			position: static;
+			width: auto;
+			margin-left: 10px;
+			background-color: transparent;
+			border-right: 0;
+			.main-menu, .sub-links {
+				margin-top: 10px;
+			}
+			.main-menu {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.sub-links {
+				position: absolute;
+				right: 0;
+				top: 60px;
+				-moz-column-count: 4;
+				-webkit-column-count: 4;
+				column-count: 4;
+				display: inline-block;
+				border: 1px solid $border2-color;
+				border-radius: 10px;
+				padding-left: 15px;
+				width: 100%;
+				li {
+					min-width: 240px;
+					border-right: 1px solid $border2-color;
+					a {
+						margin: 0;
+						padding: 8px;
+					}
+				}
+			}
 		}
 		.nav-link {
 			padding: 13px 10px;
 			border-bottom: 1px solid $border2-color;
+			@include for-monitor {
+				border-bottom: 0;
+				margin: 0 10px;
+			}
 			.glyphicon {
 				float: right;
 				top: 7px;
@@ -67,12 +163,18 @@ header {
 		}
 		.nav-item.mx-auto {
 			margin-top: 15px;
+			button {
+				margin: 10px 5px;
+			}
 		}
 		.close-navigation, .prev-menu {
 			position: absolute;
 			font-size: 1.5em;
 			top: 10px;
 			right: 10px;
+			@include for-monitor {
+				display: none;
+			}
 		}
 	}
 }

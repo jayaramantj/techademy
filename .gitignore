@@ -42,7 +42,6 @@ typings/
 # Optional npm cache directory
 .npm
 
-.DS_Store
 # Optional eslint cache
 .eslintcache
 
@@ -60,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# .DS_Store
+.DS_Store
+
+# Output
+dest/

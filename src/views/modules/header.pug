@@ -1,9 +1,9 @@
 header
 	.container-fluid
-		button.navbar-toggler.d-lg-none(type="button")
+		button.navbar-toggler(type="button")
 			span.glyphicon.glyphicon-menu-hamburger
 		
-		button.search-toggler.d-lg-none(type="button")
+		button.search-toggler(type="button")
 			span.glyphicon.glyphicon-search
 		
 		a.techademy(href="index.html")
@@ -13,6 +13,20 @@ header
 			input(type="text", name="search", placeholder="Search Courses Here...")
 			button.search-btn(type="button")
 				span.glyphicon.glyphicon-search
+			.auto-suggest.d-none
+				ul
+					li
+						a(href="#")
+							| Adobe Photoshop
+					li
+						a(href="#")
+							| Business Management
+					li
+						a(href="#")
+							| Graphic Design
+					li
+						a(href="#")
+							| Java Developer
 
 		.navbar-collapse#navigation
 			a.close-navigation(href="#")
@@ -32,12 +46,12 @@ header
 				li.nav-item
 					a.nav-link(href="#")
 						| For Business
-				li.nav-item.mx-auto
+				li.nav-item.mx-auto.my-auto
 					button.btn.btn-primary.btn-sm(type="button")
 						| Login
 					button.btn.btn-dark.btn-sm(type="button")
 						| Sign up
-
+			
 			ul.navbar-nav.sub-links.d-none
 				li.nav-item
 					a.nav-link(href="#")
