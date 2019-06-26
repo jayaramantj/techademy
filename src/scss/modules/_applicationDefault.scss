@@ -1,0 +1,39 @@
+// Brand Colors
+$body-color: #151B27;
+$heading-color: #FFF;
+$text-color: #D2D3D6;
+$star-color: #FEC107;
+$border-color: #3E75F9;
+$border2-color: #333945;
+$card-color: #202634;
+$testimonial-color: #33438A;
+$footer-color: #121921;
+$footer-bar-color: #282F3D;
+
+
+// media mixins
+@mixin for-phone {
+	@media screen and (min-device-width: 320px) {
+		@content;
+	}
+}
+@mixin for-phone-landscape {
+	@media screen and (min-device-width: 480px) {
+		@content;
+	}
+}
+@mixin for-tab-mini {
+	@media screen and (min-device-width: 768px) {
+		@content;
+	}
+}
+@mixin for-tab {
+	@media screen and (min-device-width: 992px) {
+		@content;
+	}
+}
+@mixin for-desktop {
+	@media screen and (min-device-width: 1224px) {
+		@content;
+	}
+}

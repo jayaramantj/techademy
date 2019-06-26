@@ -1,0 +1,52 @@
+@import "modules/applicationDefault";
+body {
+	background-color: $body-color;
+	color: $text-color;
+}
+h1, h2, h3, h4 {
+	color: $heading-color;
+}
+h1 {
+	font-size: 1.4em;
+	line-height: 2em;
+	margin-bottom: 1rem;
+}
+p {
+	font-size: 1em;
+	line-height: 1.9em;
+}
+a {
+	color: $text-color;
+	text-decoration: none;
+	&:hover {
+		color: $heading-color;
+		text-decoration: none;
+	}
+	&:focus {
+		color: $heading-color;
+		text-decoration: none;
+	}
+	&:visited {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+.techademy {
+	margin: 0 auto;
+	background-image: url('../img/techademy-logo.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+	display: inline-block;
+	font-size: 1px;
+	color: transparent;
+	width: 140px;
+	height: 70px;
+}
+.container-fluid {
+	padding: 0;
+	@include for-phone-landscape {
+		padding: 0 10px;
+	}
+}
+@import "modules/header";
