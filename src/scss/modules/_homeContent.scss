@@ -1,0 +1,40 @@
+@import "applicationDefault";
+.home-content {
+	.trend-course {
+		max-width: 500px;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		a {
+			display: block;
+			padding: 10px;
+			&.active {
+				border-bottom: 3px solid $border-color;
+			}
+		}
+	}
+	.learn-path {
+		margin-bottom: 50px;
+		.paths {
+			display: block;
+			width: 100%;
+			position: relative;
+			background-position: center;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin-bottom: 25px;
+			height: 100px;
+			@include text-shadow();
+			@include for-phone-landscape {
+				height: 120px;
+			}
+			@include for-tab-mini {
+				height: 180px;
+			}
+			.path-detail {
+				position: absolute;
+				left: 6%;
+				bottom: 10%;
+			}
+		}
+	}
+}

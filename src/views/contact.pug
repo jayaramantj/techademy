@@ -1,0 +1,52 @@
+extends modules/layout
+block title
+	| Techademy - Powered by IIHT : Contact us
+block content
+	.banner.inner-banner(style="background-image: url(img/about-us.jpg)")
+		h2
+			| Contact Us
+	section.contact-content
+		.container
+			h1.mt-5
+				| Ask Question
+			.row.mb-5
+				.col-12.col-md-6
+					form(action="#", method="POST")
+						.form-group
+							label(for="user_name")
+								| Name
+							input.form-control#user_name(type="text")
+						.form-group
+							label(for="user_email")
+								| Email
+							input.form-control#user_email(type="text")
+						.form-group
+							label(for="user_query")
+								| Query
+							textarea.form-control#user_query(row="10")
+						.form-group
+							button.btn.btn-primary.btn-lg(type="button")
+								| Submit
+							button.btn.btn-dark.btn-lg(type="button")
+								| Clear
+				.col-12.col-md-5.offset-md-1
+					.map
+						img(src="img/map.jpg")
+					.address.mt-3.mb-3
+						strong
+							| Address
+						| No: 15, 4th Floor, Sri Lakshmi Complex,
+						br
+						| Off MG Road, Near SBI LHO, Bangalore,
+						br
+						| Karnataka – 560001, India
+					.connect
+						.phone
+							span.glyphicon.glyphicon-earphone
+							| +91 999 123 1234
+							br
+							| +91 999 123 2345
+						.email
+							a(href="#")
+								span.glyphicon.glyphicon-envelope
+								| info@iiht.com

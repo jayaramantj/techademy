@@ -1,0 +1,17 @@
+@import "applicationDefault";
+.checkout-content {
+	.text-center {
+		font-size: 2em;
+		span {
+			display: block;
+			margin-bottom: 15px;
+			&.icon {
+				display: inline;
+				&:before {
+					position: relative;
+					top: 3px;
+				}
+			}
+		}
+	}
+}

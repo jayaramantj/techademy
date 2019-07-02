@@ -1,0 +1,59 @@
+@import "applicationDefault";
+
+.testimonials, .carousel-cover {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+}
+.testimonials {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 50px;
+	@include for-tab {
+		width: 950px;
+	}
+	.carousel-cover {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		@include for-tab {
+			align-items: flex-start;
+			flex-direction: row;
+			width: auto;
+		}
+		.feedbacks {
+			background-color: $testimonial-color;
+			padding: 10px;
+			border-radius: 5px;
+			width: 320px;
+			margin-bottom: 10px;
+			@include for-tab {
+				-webkit-transform: scale(0.7) translateY(2.1rem);
+  				transform: scale(0.7) translateY(2.1rem);
+  				opacity: 0;
+  				z-index: 1;
+  				transition: 500ms;
+  				&.active {
+  					-webkit-transform: scale(1) translateY(0);
+	  				transform: scale(1) translateY(0);
+	  				opacity: 1;
+	  				z-index: 3;
+  				}
+  				&.prev, &.next {
+  					opacity: 0.6;
+  				}
+			}
+			.reviewer-dp {
+				width: 35px;
+				height: 35px;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				border-radius: 50%;
+				position: relative;
+				top: 12px;
+				display: inline-block;
+				margin-left: 6px;
+			}
+		}
+	}
+}

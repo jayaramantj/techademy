@@ -1,0 +1,142 @@
+extends modules/layout
+block title
+	| Techademy - Powered by IIHT
+block content
+	.banner.index-banner(style="background-image: url(img/index-banner.jpg)")
+		h2
+			| Techademy - Powered by IIHT
+	section.home-content
+		.container-fluid
+			h1.text-center
+				| Techademy Treding Courses
+
+			ul.nav.nav-tab.mx-auto.trend-course(role="tablist")
+				li.nav-item
+					a.active(href="#best-seller", role="tab", data-toggle="tab")
+						| Best Seller
+				li.nav-item
+					a(href="#popular", role="tab", data-toggle="tab")
+						| Popular
+				li.nav-item
+					a(href="#free", role="tab", data-toggle="tab")
+						| Free
+				li.nav-item
+					a(href="#e-books", role="tab", data-toggle="tab")
+						| E-Books
+			.tab-content
+				.tab-pane.active#best-seller
+					include modules/cardSlider
+				.tab-pane#popular
+					include modules/cardSlider
+				.tab-pane#free
+					include modules/cardSlider
+				.tab-pane#e-books
+					include modules/cardSlider
+
+			button.btn.btn-primary.btn-lg.mx-auto.view-more(type="button")
+				| View All Courses
+
+			h1.text-center
+				| Learning Paths
+			.container.learn-path
+				.row
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card1.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card2.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card3.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card4.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card5.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+					.col-12.col-sm-6.col-md-4
+						a.paths(href="#", style="background-image: url(img/card6.jpg)")
+							span.path-detail
+								| 18 Courses
+								br
+								| Learning Path 2
+				button.btn.btn-primary.btn-lg.mx-auto.view-more(type="button")
+					| View Learning Paths
+			h1.text-center
+				| Customer Stories
+			.testimonials.mx-auto
+				.carousel-cover
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+					.feedbacks
+						a(href="javascript:void(0);")
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.
+							p.text-right
+								span.reviewer
+									| Harrison Wells
+									span.reviewer-dp(style="background-image: url(img/user.jpg)")
+
+							

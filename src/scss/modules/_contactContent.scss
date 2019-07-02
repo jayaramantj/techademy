@@ -1,0 +1,29 @@
+@import "applicationDefault";
+.contact-content {
+	.col-md-6 {
+		background-color: $card-color;
+		padding: 20px;
+	}
+	form {
+		input, textarea {
+			background-color: transparent;
+			border: 1px solid $border2-color;
+		}
+		textarea {
+			height: 170px;
+		}
+	}
+	strong {
+		display: block;
+	}
+	.connect {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		span::before {
+			position: relative;
+			margin-right: 10px;
+			top: 3px;
+		}
+	}
+}

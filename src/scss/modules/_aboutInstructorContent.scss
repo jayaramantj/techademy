@@ -1,0 +1,52 @@
+@import "applicationDefault";
+.new-target {
+	strong {
+		display: block;
+		font-size: 2em;
+		margin-bottom: 10px;
+		&::after {
+			content: "+";
+		}
+	}
+}
+.transform {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:20px;
+	display: flex;
+	justify-content: space-around;
+	color: $heading-color;
+	@include text-shadow();
+	strong {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 1.2em;
+	}
+	@include for-tab {
+		height: 200px;
+	}
+}
+.thumbnail-icon {
+	background-image: url("../img/instructor-icon.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: block;
+	margin-bottom: 20px;
+	width: 38px;
+	height: 38px;
+	&.thumb2 {
+		background-position: 0 -37px;
+	}
+	&.thumb3 {
+		background-position: 0 -75px;
+		height: 41px;
+	}
+	&.thumb4 {
+		background-position: 0 -116px;
+	}
+}
+.instructor-content {
+	strong {
+		display: block;
+	}
+}

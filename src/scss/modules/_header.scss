@@ -1,0 +1,258 @@
+@import "applicationDefault";
+header {
+	.container-fluid {
+		display: flex;
+		flex-direction: row;
+	}
+	.techademy {
+		margin: 18px auto;
+		@include for-monitor {
+			margin: 18px 10px;
+		}
+	}
+	.navbar-toggler, .search-toggler, .search-btn, .search-form {
+		position: absolute;
+	}
+	.navbar-toggler , .search-toggler {
+		color: $heading-color;
+		font-size: 1.8em;
+		padding: 5px;
+		@include for-monitor {
+			display: none;
+		}
+	}
+	.navbar-toggler {
+		padding: 5px;
+		top: 14px;
+		left: 5px;
+	}
+
+	.search-toggler {
+		right: 5px;
+		top: 11px;
+	}
+
+	.search-toggler, .search-btn {
+		border: 0;
+		background-color: transparent;
+		font-size: 1.6em;
+	}
+	
+	.search-form {
+		width: 100%;
+		top: -70px;
+		left: 0;
+		z-index: 1;
+		@include transition(all 200ms ease-out);
+		@include for-monitor {
+			position: relative;
+			top: 0;
+			margin: 12px 0 0 10px;
+			width: 85%;
+		}
+		@include for-desktop {
+			width: 100%;
+			margin-left: 25px;
+		}
+		input {
+			width: 100%;
+			padding: 21px 40px 21px 15px;
+			color: $body-color;
+			@include for-monitor {
+				padding: 9px 30px 9px 10px;
+				color: $text-color;
+				background-color: transparent;
+				border: 1px solid $border2-color;
+				border-radius: 25px;
+			}
+		}
+		.search-btn {
+			z-index: 2;
+			color: $body-color;
+			top: 15px;
+			right: 3px;
+			@include for-monitor {
+				right: 9px;
+				top: 3px;
+				color: $text-color;
+			}
+		}
+		.auto-suggest {
+			position: absolute;
+			width: 100%;
+			background-color: $heading-color;
+			z-index: 3;
+			ul {
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				border: 1px solid $border2-color;
+				li {
+					border-bottom: 1px solid $border2-color;
+					a {
+						padding: 8px;
+						display: block;
+						color: $body-color;
+					}
+					&::last-child {
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		position: fixed;
+		background-color: $body-color;
+		width: 100%;
+		height: 100%;
+		left: -101%;
+		z-index: 3;
+		overflow-y: scroll;
+		@include for-tab {
+			overflow-y: auto;
+		}
+		@include transition(all 200ms ease-out);
+		.navbar-nav {
+			margin-top: 60px;
+			@include for-tab {
+				.sub-links a {
+					@include transition(all 100ms ease-out);
+					&:hover {
+						padding-left:15px;
+					}
+				}
+			}
+		}
+		.sub-links {
+			margin: 0 0 0 10px;
+		}
+		@include for-phone-landscape {
+			width: 320px;
+			border-right: 1px solid $border2-color;
+		}
+		@include for-monitor {
+			position: static;
+			width: auto;
+			margin-left: 10px;
+			background-color: transparent;
+			border-right: 0;
+			.main-menu, .sub-links {
+				margin-top: 10px;
+			}
+			.main-menu {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.sub-links {
+				position: absolute;
+				z-index: 1;
+				right: 0;
+				top: 60px;
+				-moz-column-count: 4;
+				-webkit-column-count: 4;
+				column-count: 4;
+				display: inline-block;
+				border: 1px solid $border2-color;
+				border-radius: 10px;
+				padding-left: 15px;
+				width: 100%;
+				background-color: $body-color;
+				@include for-desktop {
+					width: auto;
+					right: 10%;
+				}
+				li {
+					min-width: 240px;
+					border-right: 1px solid $border2-color;
+					a {
+						margin: 0;
+						padding: 8px;
+					}
+				}
+			}
+		}
+		.nav-link {
+			padding: 13px 10px;
+			border-bottom: 1px solid $border2-color;
+			@include for-monitor {
+				border-bottom: 0;
+				margin: 0 10px;
+			}
+			.glyphicon {
+				float: right;
+				top: 7px;
+				font-size: 0.7em;
+			}
+		}
+		.nav-item.before-login {
+			margin-top: 15px;
+			button {
+				margin: 10px 5px;
+			}
+		}
+		.after-login {
+			.user-link, .cart-link {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				position: relative;
+			}
+			.user-link {
+				border-radius: 50%;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				font-size: 1px;
+				color: transparent;
+				top: -10px;
+			}
+			.cart-link {
+				top: 15px;
+				left: 20px;
+			}
+			.cart-count {
+				position: absolute;
+				right: -15px;
+				top: 0;
+				background-color: $footer-bar-color;
+				border-radius: 50%;
+				padding: 3px;
+				font-size: 0.8em;
+			}
+			.user-dropdown {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				width: 170px;
+				right: 50px;
+				background-color: $body-color;
+				border:1px solid $border2-color;
+				li {
+					border-bottom: 1px solid $border2-color;
+					&:last-child{
+						border: 0;
+					}
+				}
+				a {
+					display: block;
+					padding: 10px;
+				}
+			}
+		}
+		.close-navigation, .prev-menu {
+			position: absolute;
+			font-size: 1.5em;
+			top: 10px;
+			right: 10px;
+			@include for-monitor {
+				display: none;
+			}
+		}
+	}
+}

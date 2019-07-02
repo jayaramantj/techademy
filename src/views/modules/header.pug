@@ -1,0 +1,167 @@
+header
+	.container-fluid
+		button.navbar-toggler(type="button")
+			span.glyphicon.glyphicon-menu-hamburger
+		
+		button.search-toggler(type="button")
+			span.glyphicon.glyphicon-search
+		
+		a.techademy(href="index.html")
+			| Techademy
+		
+		form.search-form(action="#", method="POST")
+			input(type="text", name="search", placeholder="Search Courses Here...")
+			button.search-btn(type="button")
+				span.glyphicon.glyphicon-search
+			.auto-suggest.d-none
+				ul
+					li
+						a(href="#")
+							| Adobe Photoshop
+					li
+						a(href="#")
+							| Business Management
+					li
+						a(href="#")
+							| Graphic Design
+					li
+						a(href="#")
+							| Java Developer
+
+		.navbar-collapse#navigation
+			a.close-navigation(href="#")
+				span.glyphicon.glyphicon-remove
+
+			a.prev-menu.d-none(href="#")
+				span.glyphicon.glyphicon-menu-left
+
+			ul.navbar-nav.main-menu
+				li.nav-item.active
+					a.nav-link.sub-menu(href="#", data-target="sub-links")
+						| Skills
+						span.glyphicon.glyphicon-menu-down
+					ul.navbar-nav.sub-links.d-none
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+						li.nav-item
+							a.nav-link(href="#")
+								| Business Management
+				li.nav-item
+					a.nav-link(href="plan.html")
+						| Plans
+				li.nav-item
+					a.nav-link(href="#")
+						| For Business
+				li.nav-item.mx-auto.my-auto.before-login
+					button.btn.btn-primary.btn-sm(type="button")
+						| Login
+					button.btn.btn-dark.btn-sm(type="button")
+						| Sign up
+				li.nav-item.mx-auto.after-login.d-none
+					a.user-link(href="#", style="background-image: url(img/user.jpg)")
+						| user name
+					a.cart-link(href="#")
+						span.glyphicon.glyphicon-shopping-cart
+						span.cart-count
+							| 123
+					ul.user-dropdown.d-none
+						li
+							a(href="#")
+								| My Purchase
+						li
+							a(href="#")
+								| Settings
+						li
+							a(href="#")
+								| Logout
