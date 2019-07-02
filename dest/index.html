@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Techademy - Powered by IIHT
+    </title>
+    <link rel="stylesheet" href="css/plugin-bundle.css">
+    <link rel="stylesheet" href="css/application.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+        <button class="search-toggler" type="button"><span class="glyphicon glyphicon-search"></span></button><a class="techademy" href="index.html">Techademy</a>
+        <form class="search-form" action="#" method="POST">
+          <input type="text" name="search" placeholder="Search Courses Here...">
+          <button class="search-btn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          <div class="auto-suggest d-none">
+            <ul>
+              <li><a href="#">Adobe Photoshop</a></li>
+              <li><a href="#">Business Management</a></li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Java Developer</a></li>
+            </ul>
+          </div>
+        </form>
+        <div class="navbar-collapse" id="navigation"><a class="close-navigation" href="#"><span class="glyphicon glyphicon-remove"></span></a><a class="prev-menu d-none" href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
+          <ul class="navbar-nav main-menu">
+            <li class="nav-item active"><a class="nav-link sub-menu" href="#" data-target="sub-links">Skills<span class="glyphicon glyphicon-menu-down"></span></a>
+              <ul class="navbar-nav sub-links d-none">
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business Management</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="plan.html">Plans</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">For Business</a></li>
+            <li class="nav-item mx-auto my-auto before-login">
+              <button class="btn btn-primary btn-sm" type="button">Login</button>
+              <button class="btn btn-dark btn-sm" type="button">Sign up</button>
+            </li>
+            <li class="nav-item mx-auto after-login d-none"><a class="user-link" href="#" style="background-image: url(img/user.jpg)">user name</a><a class="cart-link" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="cart-count">123</span></a>
+              <ul class="user-dropdown d-none">
+                <li><a href="#">My Purchase</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="banner index-banner" style="background-image: url(img/index-banner.jpg)">
+      <h2>Techademy - Powered by IIHT</h2>
+    </div>
+    <section class="home-content">
+      <div class="container-fluid">
+        <h1 class="text-center">Techademy Treding Courses</h1>
+        <ul class="nav nav-tab mx-auto trend-course" role="tablist">
+          <li class="nav-item"><a class="active" href="#best-seller" role="tab" data-toggle="tab">Best Seller</a></li>
+          <li class="nav-item"><a href="#popular" role="tab" data-toggle="tab">Popular</a></li>
+          <li class="nav-item"><a href="#free" role="tab" data-toggle="tab">Free</a></li>
+          <li class="nav-item"><a href="#e-books" role="tab" data-toggle="tab">E-Books</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="best-seller">
+            <div class="regular slider"><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card1.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card2.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card3.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card4.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card5.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card6.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card7.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card8.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="tab-pane" id="popular">
+            <div class="regular slider"><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card1.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card2.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card3.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card4.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card5.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card6.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card7.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card8.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="tab-pane" id="free">
+            <div class="regular slider"><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card1.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card2.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card3.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card4.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card5.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card6.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card7.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card8.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="tab-pane" id="e-books">
+            <div class="regular slider"><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card1.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card2.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card3.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card4.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card5.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card6.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card7.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a><a href="#">
+                <div class="card"><img class="card-img-top img-fluid" src="img/card8.jpg">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="price float-right"><span class="icon icon-inr"></span>1999</span>Adobe Photoshop Beginner Course</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci, id condimentum diam.</p>
+                    <ul class="options">
+                      <li><span class="glyphicon glyphicon-time"></span>12h 30m</li>
+                      <li><span class="glyphicon glyphicon-heart"></span>80000</li>
+                      <li>
+                        <button class="btn btn-primary btn-sm" type="button">Add to Cart</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg mx-auto view-more" type="button">View All Courses</button>
+        <h1 class="text-center">Learning Paths</h1>
+        <div class="container learn-path">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card1.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card2.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card3.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card4.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card5.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="paths" href="#" style="background-image: url(img/card6.jpg)"><span class="path-detail">18 Courses<br>Learning Path 2</span></a></div>
+          </div>
+          <button class="btn btn-primary btn-lg mx-auto view-more" type="button">View Learning Paths</button>
+        </div>
+        <h1 class="text-center">Customer Stories</h1>
+        <div class="testimonials mx-auto">
+          <div class="carousel-cover">
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+            <div class="feedbacks"><a href="javascript:void(0);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lacus eget ullamcorper accumsan. Nunc efficitur lacinia fringilla. Etiam quis consectetur orci.</p>
+                <p class="text-right"><span class="reviewer">Harrison Wells<span class="reviewer-dp" style="background-image: url(img/user.jpg)"></span></span></p></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-5"><a class="techademy" href="index.html">Techademy</a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <ul class="social">
+              <li>Follow Us: </li>
+              <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon icon-google-plus"></span></a></li>
+              <li><a href="#"><span class="icon icon-pinterest-p"></span></a></li>
+              <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 offset-md-1">
+            <h4>Usefull Links</h4>
+            <ul class="quick-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Cloud Labs</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">API Showcases</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="instructor.html">Become an Instructor</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h4>Contact Us</h4>
+            <ul class="quick-links">
+              <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>+91 999 123 2345</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>info@iiht.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright-block"><span class="copyright">&copy; 2018<a href="index.html">TECHADEMY</a></span>
+        <ul class="term-condition">
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/plugin-bundle.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+  </body>
+</html>
