@@ -26,12 +26,15 @@ function copy(done) {
 	gulp.src('./src/img/*.*')
 		.pipe(gulp.dest('./dest/img/'));
 
+	gulp.src('./node_modules/slick-carousel/slick/slick.js')
+		.pipe(gulp.dest('./src/js/library/'));
+
 	done();
 }
 
 function concats(done) {
 	gulp.src(['./node_modules/jquery/dist/jquery.js', 
-			'./node_modules/slick-carousel/slick/slick.js', 
+			'./src/js/library/slick.js', 
 			'./node_modules/bootstrap/dist/js/bootstrap.js'])
 		.pipe(concat('plugin-bundle.js'))
 		.pipe(gulp.dest('./dest/js/'));
@@ -73,7 +76,7 @@ function watch(){
 }
 
 var watch = gulp.parallel(sync, watch),
-	build = gulp.series([copy, concats, scss, views, script, watch]);
+	build = gulp.series([concats, scss, views, script, watch]);
 
 exports.copy = copy;
 exports.concats = concats;

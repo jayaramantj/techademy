@@ -1,0 +1,96 @@
+@import "applicationDefault";
+footer {
+	.container-fluid {
+		background-color: $footer-color;
+		padding: 10px 10px;
+		.row {
+			margin-left: -10px;
+			margin-right: -10px;
+			@include for-tab {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		.techademy {
+			margin-bottom: 20px;
+		}
+		.social {
+			display: flex;
+			flex-direction: row;
+			list-style: none;
+			padding: 0 0 15px 0;
+			border-bottom: 1px solid $border2-color;
+			margin: 20px 0;
+			@include for-tab {
+				border: 0;
+			}
+			li {
+				margin-right:10px;
+			}
+		}
+		h4 {
+			font-size: 1.3em;
+			@include for-tab {
+				margin: 30px 0 20px 0;
+			}
+		}
+		.quick-links {
+			padding: 0;
+			list-style: none;
+			li a {
+				display: block;
+				padding: 9px 0;
+				@include transition(all 100ms ease-out);
+				&:hover {
+					padding-left:10px;
+				}
+				span {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	.copyright-block {
+		background-color: $footer-bar-color;
+		.copyright {
+			display: block;
+			padding: 10px;
+			text-align: center;
+			font-size: 0.8em;
+			@include for-phone-landscape {
+				float: right;
+				display: inline-block;
+			}
+			a {
+				margin-left: 10px;
+			}
+		}
+		.term-condition {
+			display: flex;
+			flex-direction: row;
+			padding: 0;
+			list-style: none;
+			margin-bottom: 0;
+			font-size: 0.8em;
+			li {
+				margin-left: 10px;
+				a {
+					padding: 10px 0;
+					display: inline-block;
+					&::after {
+						content: "|";
+						margin-left: 15px;
+					}
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					a::after {
+						content: "";
+					}
+				}
+			}
+		}
+	}
+}

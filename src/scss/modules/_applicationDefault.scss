@@ -42,3 +42,16 @@ $footer-bar-color: #282F3D;
 		@content;
 	}
 }
+
+// transition animation
+@mixin transition($transition...) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+// text shadow
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+	text-shadow: $x $y $blur $color;
+}

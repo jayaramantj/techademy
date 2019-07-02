@@ -1,0 +1,64 @@
+@import "applicationDefault";
+.card {
+	background-color: $card-color;
+	border: 1px solid $border-color;
+	.card-body, .options {
+		display: flex;
+		justify-content: space-between;
+	}
+	.card-body {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px;
+		.card-title {
+			.price {
+				font-size: 0.7em;
+				span::before {
+					font-size: 0.9em;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+		ul {
+			flex-direction: row;
+			list-style: none;
+			padding: 10px 0 0 0;
+			border-top: 1px solid #2E3440;
+			margin: 0;
+			.glyphicon::before {
+				position: relative;
+				top: 1px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.slick-dots {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	width: 220px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	button {
+		background-color: transparent;
+		border: 0;
+		color: $text-color;
+	}
+}
+
+@include for-phone-landscape {
+	.slider {
+		.slick-list {
+			.slick-slide {
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}	
+}

@@ -5,11 +5,11 @@ body {
 }
 h1, h2, h3, h4 {
 	color: $heading-color;
+	text-transform: capitalize;
 }
 h1 {
 	font-size: 1.4em;
-	line-height: 2em;
-	margin-bottom: 1rem;
+	margin-bottom: 1.2rem;
 }
 p {
 	font-size: 1em;
@@ -41,4 +41,65 @@ a {
 		padding: 0 10px;
 	}
 }
+.banner {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100px;
+	margin-bottom: 20px;
+	position: relative;
+	h2 {
+		position: absolute;
+		text-align: right;
+		top: 40%;
+		right: 10px;
+		font-size: 1.6em;
+		@include text-shadow();
+		@include for-tab-mini {
+			right: 10%;
+		}
+	}
+}
+.index-banner {
+	min-height: 170px;
+	@include for-tab-mini {
+		height: 220px;
+	}
+	@include for-tab {
+		height: 300px;
+	}
+	@include for-desktop {
+		height: 400px;
+	}
+}
+.inner-banner {
+	min-height: 120px;
+	@include for-phone-landscape {
+		height: 170px;
+	}
+	@include for-tab {
+		height: 200px;
+	}
+	@include for-desktop {
+		height: 220px;
+	}
+}
+.view-more {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	display: inherit;
+}
 @import "modules/header";
+@import "modules/footer";
+@import "modules/card";
+@import "modules/homeContent";
+@import "modules/aboutInstructorContent";
+@import "modules/testimonialSlider";
+@import "modules/contactContent";
+@import "modules/checkout";
+
+.plan-content {
+	.row {
+		margin: 0;
+	}
+}
